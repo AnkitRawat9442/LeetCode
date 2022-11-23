@@ -52,10 +52,10 @@ bool searchMatrix(vector<vector<int>> &matrix, int target)
                   2    [ 7, 8, 9, 10 ]
 
         let n = 6 ;
-        6 / 4 = 1 ==> i
+        6 / 4 = 1 ==> i    // 4 = no of column 
         6 % 4 = 2 ==> j
      matrix[6] =  matrix[1][2] = 5 
-     
+
 */
 bool searchMatrix_o(vector<vector<int>> &matrix, int target)
 {
