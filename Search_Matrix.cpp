@@ -43,6 +43,20 @@ bool searchMatrix(vector<vector<int>> &matrix, int target)
 
 // optimal solution
 // perform binary search on full matrix 
+// we can consider matrix as one array 
+/***
+                  i      j ->
+                  |      0  1  2  3 
+      matrix  =   0    [ 1, 2, 3, 4 ]
+                  1    [ 3, 4, 5, 6 ]
+                  2    [ 7, 8, 9, 10 ]
+
+        let n = 6 ;
+        6 / 4 = 1 ==> i
+        6 % 4 = 2 ==> j
+     matrix[6] =  matrix[1][2] = 5 
+     
+*/
 bool searchMatrix_o(vector<vector<int>> &matrix, int target)
 {
     int m = matrix.size(), n = matrix[0].size();
